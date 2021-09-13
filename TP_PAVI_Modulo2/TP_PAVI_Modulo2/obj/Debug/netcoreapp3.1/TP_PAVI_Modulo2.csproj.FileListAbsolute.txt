@@ -1,0 +1,15 @@
+C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\TP_PAVI_Modulo2.exe
+C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\TP_PAVI_Modulo2.deps.json
+C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\TP_PAVI_Modulo2.runtimeconfig.json
+C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\TP_PAVI_Modulo2.runtimeconfig.dev.json
+C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\TP_PAVI_Modulo2.dll
+C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\TP_PAVI_Modulo2.pdb
+C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.csproj.AssemblyReference.cache
+C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.Login.resources
+C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.csproj.GenerateResource.cache
+C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.AssemblyInfoInputs.cache
+C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.AssemblyInfo.cs
+C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.csproj.CoreCompileInputs.cache
+C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.dll
+C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.pdb
+C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.genruntimeconfig.cache
