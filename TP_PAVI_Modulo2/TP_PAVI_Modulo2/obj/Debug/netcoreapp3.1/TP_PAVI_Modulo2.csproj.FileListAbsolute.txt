@@ -13,3 +13,28 @@ C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2
 C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.dll
 C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.pdb
 C:\Users\Tmk\Desktop\Matias Carrion\Personal\Facultad\PAVI\Repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.genruntimeconfig.cache
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\TP_PAVI_Modulo2.exe
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\TP_PAVI_Modulo2.deps.json
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\TP_PAVI_Modulo2.runtimeconfig.json
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\TP_PAVI_Modulo2.runtimeconfig.dev.json
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\TP_PAVI_Modulo2.dll
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\TP_PAVI_Modulo2.pdb
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.csprojAssemblyReference.cache
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.Interfaces.FrmPrincipal.resources
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.Login.resources
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.Properties.Resources.resources
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.csproj.GenerateResource.cache
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.AssemblyInfoInputs.cache
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.AssemblyInfo.cs
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.csproj.CoreCompileInputs.cache
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.dll
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.pdb
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.genruntimeconfig.cache
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.csproj.CopyComplete
+C:\Users\Dani\source\repos\TP_PAVI_Modulo2\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.Interfaces.Usuarios.resources
