@@ -1,7 +1,7 @@
 ﻿
 namespace TP_PAVI_Modulo2.Interfaces
 {
-    partial class Usuarios
+    partial class FrmUsuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -73,7 +73,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 51);
+            this.panel1.Size = new System.Drawing.Size(866, 51);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -131,6 +131,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             // dgvUsuarios
             // 
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsuarios.GridColor = System.Drawing.SystemColors.ControlLight;
             this.dgvUsuarios.Location = new System.Drawing.Point(12, 47);
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.RowTemplate.Height = 25;
@@ -163,14 +164,14 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(397, 51);
+            this.panel3.Location = new System.Drawing.Point(511, 51);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(403, 399);
+            this.panel3.Size = new System.Drawing.Size(355, 399);
             this.panel3.TabIndex = 3;
             // 
             // txtNombreUsuario
             // 
-            this.txtNombreUsuario.Location = new System.Drawing.Point(118, 47);
+            this.txtNombreUsuario.Location = new System.Drawing.Point(110, 91);
             this.txtNombreUsuario.Name = "txtNombreUsuario";
             this.txtNombreUsuario.Size = new System.Drawing.Size(217, 23);
             this.txtNombreUsuario.TabIndex = 16;
@@ -179,7 +180,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(45, 49);
+            this.label7.Location = new System.Drawing.Point(37, 93);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 19);
             this.label7.TabIndex = 15;
@@ -190,7 +191,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.btnCancelar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Location = new System.Drawing.Point(229, 292);
+            this.btnCancelar.Location = new System.Drawing.Point(221, 336);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(106, 34);
             this.btnCancelar.TabIndex = 14;
@@ -203,7 +204,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.btnAceptar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnAceptar.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAceptar.Location = new System.Drawing.Point(118, 292);
+            this.btnAceptar.Location = new System.Drawing.Point(110, 336);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(105, 34);
             this.btnAceptar.TabIndex = 6;
@@ -213,28 +214,28 @@ namespace TP_PAVI_Modulo2.Interfaces
             // 
             // txtFechaFin
             // 
-            this.txtFechaFin.Location = new System.Drawing.Point(118, 246);
+            this.txtFechaFin.Location = new System.Drawing.Point(110, 290);
             this.txtFechaFin.Name = "txtFechaFin";
             this.txtFechaFin.Size = new System.Drawing.Size(217, 23);
             this.txtFechaFin.TabIndex = 13;
             // 
             // txtFechaInicio
             // 
-            this.txtFechaInicio.Location = new System.Drawing.Point(118, 203);
+            this.txtFechaInicio.Location = new System.Drawing.Point(110, 247);
             this.txtFechaInicio.Name = "txtFechaInicio";
             this.txtFechaInicio.Size = new System.Drawing.Size(217, 23);
             this.txtFechaInicio.TabIndex = 12;
             // 
             // txtObservaciones
             // 
-            this.txtObservaciones.Location = new System.Drawing.Point(118, 149);
+            this.txtObservaciones.Location = new System.Drawing.Point(110, 193);
             this.txtObservaciones.Name = "txtObservaciones";
             this.txtObservaciones.Size = new System.Drawing.Size(217, 23);
             this.txtObservaciones.TabIndex = 11;
             // 
             // txtPuntuacion
             // 
-            this.txtPuntuacion.Location = new System.Drawing.Point(118, 98);
+            this.txtPuntuacion.Location = new System.Drawing.Point(110, 142);
             this.txtPuntuacion.Name = "txtPuntuacion";
             this.txtPuntuacion.Size = new System.Drawing.Size(217, 23);
             this.txtPuntuacion.TabIndex = 10;
@@ -243,7 +244,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(45, 248);
+            this.label6.Location = new System.Drawing.Point(37, 292);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 19);
             this.label6.TabIndex = 9;
@@ -253,7 +254,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(31, 205);
+            this.label5.Location = new System.Drawing.Point(23, 249);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 19);
             this.label5.TabIndex = 8;
@@ -263,7 +264,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(13, 151);
+            this.label4.Location = new System.Drawing.Point(5, 195);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 19);
             this.label4.TabIndex = 7;
@@ -273,7 +274,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(33, 100);
+            this.label3.Location = new System.Drawing.Point(25, 144);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 19);
             this.label3.TabIndex = 6;
@@ -283,23 +284,24 @@ namespace TP_PAVI_Modulo2.Interfaces
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(142, 3);
+            this.label2.Location = new System.Drawing.Point(132, 3);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(140, 21);
             this.label2.TabIndex = 2;
             this.label2.Text = "Alta - Modificacion";
             // 
-            // Usuarios
+            // FrmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(866, 450);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "Usuarios";
+            this.Name = "FrmUsuarios";
             this.Text = "Usuarios";
+            this.Load += new System.EventHandler(this.FrmUsuarios_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -319,7 +321,6 @@ namespace TP_PAVI_Modulo2.Interfaces
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.DataGridView dgvUsuarios;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnCancelar;
@@ -335,5 +336,6 @@ namespace TP_PAVI_Modulo2.Interfaces
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNombreUsuario;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView dgvUsuarios;
     }
 }

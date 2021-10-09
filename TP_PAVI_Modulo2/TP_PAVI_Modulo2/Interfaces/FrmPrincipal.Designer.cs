@@ -87,6 +87,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.btnCursos.TabIndex = 7;
             this.btnCursos.Text = "Cursos";
             this.btnCursos.UseVisualStyleBackColor = true;
+            this.btnCursos.Click += new System.EventHandler(this.btnCursos_Click);
             // 
             // btnUsuarios
             // 
@@ -142,6 +143,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenido";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmPrincipal_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

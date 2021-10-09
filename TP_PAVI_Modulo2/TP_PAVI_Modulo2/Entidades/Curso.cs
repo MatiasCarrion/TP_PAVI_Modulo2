@@ -10,7 +10,7 @@ namespace TP_PAVI_Modulo2.Entidades
         public string nombre { get; set; }
         public string descripcion { get; set; }
         public DateTime fechaVigencia { get; set; }
-        public int idCategoria { get; set; }
+        public Categoria categoria { get; set; }
         public bool borrado { get; set; }
     }
 }

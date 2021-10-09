@@ -10,11 +10,11 @@ using TP_PAVI_Modulo2.Entidades;
 
 namespace TP_PAVI_Modulo2.Interfaces
 {
-    public partial class Usuarios : Form
+    public partial class FrmUsuarios : Form
     {
         private FormMode formMode = FormMode.nuevo;
         private UsuarioService oUsuarioService;
-        public Usuarios()
+        public FrmUsuarios()
         {
             InitializeComponent();
             oUsuarioService = new UsuarioService();
@@ -139,7 +139,49 @@ namespace TP_PAVI_Modulo2.Interfaces
             CargarFormulario();
             MessageBox.Show("Operacion Cancelada");
         }
+        private void InitializeDataGridView()
+        {
+            // Cree un DataGridView no vinculado declarando un recuento de columnas.
+            dgvUsuarios.ColumnCount = 3;
+            dgvUsuarios.ColumnHeadersVisible = true;
 
+            // Configuramos la AutoGenerateColumns en false para que no se autogeneren las columnas
+            dgvUsuarios.AutoGenerateColumns = false;
+
+            // Cambia el estilo de la cabecera de la grilla.
+            DataGridViewCellStyle columnHeaderStyle = new DataGridViewCellStyle();
+
+            columnHeaderStyle.BackColor = Color.Beige;
+            columnHeaderStyle.Font = new Font("Verdana", 8, FontStyle.Bold);
+            dgvUsuarios.ColumnHeadersDefaultCellStyle = columnHeaderStyle;
+
+            // Definimos el nombre de la columnas y el DataPropertyName que se asocia a DataSource
+            //dgvUsuarios.Columns[0].Name = "ID";
+            //dgvUsuarios.Columns[0].DataPropertyName = "idUsuario";
+            // Definimos el ancho de la columna.
+            //dgvUsuarios.Columns[0].Width = 50;
+
+            dgvUsuarios.Columns[0].Name = "Nombre";
+            dgvUsuarios.Columns[0].DataPropertyName = "nombreUsuario";
+            dgvUsuarios.Columns[0].Width = 100;
+
+            dgvUsuarios.Columns[1].Name = "Email";
+            dgvUsuarios.Columns[1].DataPropertyName = "email";
+            dgvUsuarios.Columns[1].Width = 150;
+
+            dgvUsuarios.Columns[2].Name = "Perfil";
+            dgvUsuarios.Columns[2].DataPropertyName = "perfil";
+            dgvUsuarios.Columns[2].Width = 100;
+
+            // Cambia el tamaño de la altura de los encabezados de columna.
+            dgvUsuarios.AutoResizeColumnHeadersHeight();
+
+            // Cambia el tamaño de todas las alturas de fila para ajustar el contenido de todas las celdas que no sean de encabezado.
+            dgvUsuarios.AutoResizeRows(
+                DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders);
+
+            dgvUsuarios.DataSource = oUsuarioService.ObtenerTodos();
+        }
         private bool ValidarCampos()
         {
             // campos obligatorios
@@ -158,6 +200,11 @@ namespace TP_PAVI_Modulo2.Interfaces
         private bool ExisteUsuario()
         {
             return oUsuarioService.ObtenerUsuario(txtNombreUsuario.Text) != null;
+        }
+
+        private void FrmUsuarios_Load(object sender, EventArgs e)
+        {
+            InitializeDataGridView();
         }
     }
 }

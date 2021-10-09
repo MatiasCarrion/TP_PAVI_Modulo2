@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PAV\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2.csproj": {}
+    "D:\\PAV\\Pruebas\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2.csproj": {}
   },
   "projects": {
-    "D:\\PAV\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2.csproj": {
+    "D:\\PAV\\Pruebas\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PAV\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2.csproj",
+        "projectUniqueName": "D:\\PAV\\Pruebas\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2.csproj",
         "projectName": "TP_PAVI_Modulo2",
-        "projectPath": "D:\\PAV\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2.csproj",
+        "projectPath": "D:\\PAV\\Pruebas\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2.csproj",
         "packagesPath": "C:\\Users\\Ponce\\.nuget\\packages\\",
-        "outputPath": "D:\\PAV\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\obj\\",
+        "outputPath": "D:\\PAV\\Pruebas\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ponce\\AppData\\Roaming\\NuGet\\NuGet.Config",

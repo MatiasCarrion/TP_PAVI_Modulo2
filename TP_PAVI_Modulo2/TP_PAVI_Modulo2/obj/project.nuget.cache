@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HZ3Nykr82UX9kDdf+oq2E8nNUJBXn134+NVtNyKnrkY6LxqOi43kOsPqp1s165t5m/zQFezzNE0eXxca8crzfQ==",
+  "dgSpecHash": "zXz1oYEpbEe2GoSxz+xofQJbOV48RvtsSr+WOa7QLC5h0ztmSJGYiVZqO0F50QjEUlBynzBU3PxJhXYPDpxF5g==",
   "success": true,
-  "projectFilePath": "D:\\PAV\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2.csproj",
+  "projectFilePath": "D:\\PAV\\Pruebas\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ponce\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Ponce\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

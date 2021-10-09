@@ -4,7 +4,7 @@
     <Compile Update="Interfaces\FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Interfaces\Usuarios.cs">
+    <Compile Update="Interfaces\FrmUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Login.cs">
