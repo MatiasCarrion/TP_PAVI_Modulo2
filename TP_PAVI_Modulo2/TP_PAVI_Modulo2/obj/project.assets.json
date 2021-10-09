@@ -454,19 +454,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dani\\.nuget\\packages\\": {}
+    "C:\\Users\\Ponce\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dani\\source\\repos\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2.csproj",
+      "projectUniqueName": "D:\\PAV\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2.csproj",
       "projectName": "TP_PAVI_Modulo2",
-      "projectPath": "C:\\Users\\Dani\\source\\repos\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2.csproj",
-      "packagesPath": "C:\\Users\\Dani\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dani\\source\\repos\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\obj\\",
+      "projectPath": "D:\\PAV\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2.csproj",
+      "packagesPath": "C:\\Users\\Ponce\\.nuget\\packages\\",
+      "outputPath": "D:\\PAV\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\TP_PAVI_Modulo2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ponce\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -515,7 +515,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

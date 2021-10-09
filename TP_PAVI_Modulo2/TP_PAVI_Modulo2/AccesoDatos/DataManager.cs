@@ -14,7 +14,9 @@ namespace TP_PAVI_Modulo2.AccesoDatos
 
         public DataManager()
         {
+
             this.cadena_de_conexion = "Data Source=.\\SQLEXPRESS;Initial Catalog=TPPAVI;Integrated Security=True;";
+
         }
         // en este método aplicamos el patrón singleton.
         // si ya existe una instancia DataManager no hacemos nada, caso contrario la creamos.
@@ -70,7 +72,8 @@ namespace TP_PAVI_Modulo2.AccesoDatos
         }
 
         // para 
-        public int EjecutarSQL(string consulta, Dictionary<string, object> parametros = null)
+
+        public int EjecutarSQL (string consulta, Dictionary<string, object> parametros = null)
         {
             SqlConnection dbConnection = new SqlConnection();
             SqlCommand cmd = new SqlCommand();
