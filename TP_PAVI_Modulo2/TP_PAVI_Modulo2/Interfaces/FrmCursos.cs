@@ -12,13 +12,26 @@ namespace TP_PAVI_Modulo2.Interfaces
 {
     public partial class FrmCursos : Form
     {
+        private readonly CategoriaService categoriaService;
         private FormMode formMode = FormMode.nuevo;
-        private CursoService oCursoService;
+        private readonly CursoService cursoService;
         public FrmCursos()
         {
             InitializeComponent();
-            oCursoService = new CursoService();
-            CargarFormulario();
+            cursoService = new CursoService();
+            categoriaService = new CategoriaService();
+            //CargarFormulario();
+        }
+        private void LlenarCombo(ComboBox cbo, Object source, string display, String value)
+        {
+            // Datasource: establece el origen de datos de este objeto.
+            cbo.DataSource = source;
+            // DisplayMember: establece la propiedad que se va a mostrar para este ListControl.
+            cbo.DisplayMember = display;
+            // ValueMember: establece la ruta de acceso de la propiedad que se utilizará como valor real para los elementos de ListControl.
+            cbo.ValueMember = value;
+            //SelectedIndex: establece el índice que especifica el elemento seleccionado actualmente.
+            cbo.SelectedIndex = -1;
         }
 
         public enum FormMode
@@ -180,7 +193,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             dgvCursos.AutoResizeRows(
                 DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders);
 
-            dgvCursos.DataSource = oCursoService.ObtenerTodos();
+            dgvCursos.DataSource = cursoService.ObtenerTodos();
         }
         private bool ValidarCampos()
         {
@@ -197,24 +210,16 @@ namespace TP_PAVI_Modulo2.Interfaces
             return true;
         }
 
+        private void FrmCursos_Load(object sender, EventArgs e)
+        {
+            InitializeDataGridView();
+            LlenarCombo(cboBuscarCateg, categoriaService.ObtenerTodos(), "nombreCateg", "idCategoria");
+        }
+
         //private bool ExisteUsuario()
         //{
         //    return oCursoService.ObtenerUsuario(txtNombreCurso.Text) != null;
         //}
 
-        private void FrmUsuarios_Load(object sender, EventArgs e)
-        {
-            InitializeDataGridView();
-        }
-
-        private void lblBuscar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

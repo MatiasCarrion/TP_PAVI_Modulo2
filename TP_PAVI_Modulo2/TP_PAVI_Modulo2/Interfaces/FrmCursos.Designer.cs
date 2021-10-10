@@ -33,10 +33,10 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlListado = new System.Windows.Forms.Panel();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBuscarCurso = new System.Windows.Forms.TextBox();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.lblFiltro1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboBuscarCateg = new System.Windows.Forms.ComboBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -49,7 +49,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.lblCursoName = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
-            this.txtPuntuacion = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.lblCursoCateg = new System.Windows.Forms.Label();
             this.lblFechaVig = new System.Windows.Forms.Label();
             this.lblCursoDesc = new System.Windows.Forms.Label();
@@ -82,10 +82,10 @@ namespace TP_PAVI_Modulo2.Interfaces
             // 
             this.pnlListado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlListado.Controls.Add(this.btnBuscar);
-            this.pnlListado.Controls.Add(this.textBox1);
+            this.pnlListado.Controls.Add(this.txtBuscarCurso);
             this.pnlListado.Controls.Add(this.lblBuscar);
             this.pnlListado.Controls.Add(this.lblFiltro1);
-            this.pnlListado.Controls.Add(this.comboBox1);
+            this.pnlListado.Controls.Add(this.cboBuscarCateg);
             this.pnlListado.Controls.Add(this.btnEliminar);
             this.pnlListado.Controls.Add(this.btnModificar);
             this.pnlListado.Controls.Add(this.btnAgregar);
@@ -109,13 +109,12 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtBuscarCurso
             // 
-            this.textBox1.Location = new System.Drawing.Point(93, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 23);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtBuscarCurso.Location = new System.Drawing.Point(93, 38);
+            this.txtBuscarCurso.Name = "txtBuscarCurso";
+            this.txtBuscarCurso.Size = new System.Drawing.Size(250, 23);
+            this.txtBuscarCurso.TabIndex = 9;
             // 
             // lblBuscar
             // 
@@ -126,7 +125,6 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.lblBuscar.Size = new System.Drawing.Size(46, 17);
             this.lblBuscar.TabIndex = 8;
             this.lblBuscar.Text = "Buscar";
-            this.lblBuscar.Click += new System.EventHandler(this.lblBuscar_Click);
             // 
             // lblFiltro1
             // 
@@ -138,13 +136,13 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.lblFiltro1.TabIndex = 7;
             this.lblFiltro1.Text = "Categoría";
             // 
-            // comboBox1
+            // cboBuscarCateg
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(93, 9);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(250, 23);
-            this.comboBox1.TabIndex = 6;
+            this.cboBuscarCateg.FormattingEnabled = true;
+            this.cboBuscarCateg.Location = new System.Drawing.Point(93, 9);
+            this.cboBuscarCateg.Name = "cboBuscarCateg";
+            this.cboBuscarCateg.Size = new System.Drawing.Size(250, 23);
+            this.cboBuscarCateg.TabIndex = 6;
             // 
             // btnEliminar
             // 
@@ -214,7 +212,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.pnlAltaMod.Controls.Add(this.lblCursoName);
             this.pnlAltaMod.Controls.Add(this.btnCancelar);
             this.pnlAltaMod.Controls.Add(this.btnAceptar);
-            this.pnlAltaMod.Controls.Add(this.txtPuntuacion);
+            this.pnlAltaMod.Controls.Add(this.txtDescripcion);
             this.pnlAltaMod.Controls.Add(this.lblCursoCateg);
             this.pnlAltaMod.Controls.Add(this.lblFechaVig);
             this.pnlAltaMod.Controls.Add(this.lblCursoDesc);
@@ -282,12 +280,12 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
-            // txtPuntuacion
+            // txtDescripcion
             // 
-            this.txtPuntuacion.Location = new System.Drawing.Point(110, 142);
-            this.txtPuntuacion.Name = "txtPuntuacion";
-            this.txtPuntuacion.Size = new System.Drawing.Size(166, 23);
-            this.txtPuntuacion.TabIndex = 10;
+            this.txtDescripcion.Location = new System.Drawing.Point(110, 142);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(166, 23);
+            this.txtDescripcion.TabIndex = 10;
             // 
             // lblCursoCateg
             // 
@@ -339,9 +337,8 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.Controls.Add(this.pnlListado);
             this.Controls.Add(this.panel1);
             this.Name = "FrmCursos";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Cursos";
-            this.Load += new System.EventHandler(this.FrmUsuarios_Load);
+            this.Load += new System.EventHandler(this.FrmCursos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pnlListado.ResumeLayout(false);
@@ -365,7 +362,7 @@ namespace TP_PAVI_Modulo2.Interfaces
         private System.Windows.Forms.Panel pnlAltaMod;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAceptar;
-        private System.Windows.Forms.TextBox txtPuntuacion;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label lblCursoCateg;
         private System.Windows.Forms.Label lblFechaVig;
         private System.Windows.Forms.Label lblCursoDesc;
@@ -376,9 +373,9 @@ namespace TP_PAVI_Modulo2.Interfaces
         private System.Windows.Forms.ComboBox cboCateg;
         private System.Windows.Forms.DateTimePicker dtpFechaVig;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBuscarCurso;
         private System.Windows.Forms.Label lblBuscar;
         private System.Windows.Forms.Label lblFiltro1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboBuscarCateg;
     }
 }
