@@ -76,7 +76,6 @@ D:\PAV\Pruebas\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\runtimes\
 D:\PAV\Pruebas\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 D:\PAV\Pruebas\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\PAV\Pruebas\TP_PAVI_Modulo2\TP_PAVI_Modulo2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\PAV\Pruebas\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.csproj.AssemblyReference.cache
 D:\PAV\Pruebas\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.Interfaces.FrmPrincipal.resources
 D:\PAV\Pruebas\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.Login.resources
 D:\PAV\Pruebas\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.Properties.Resources.resources

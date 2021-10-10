@@ -142,49 +142,45 @@ namespace TP_PAVI_Modulo2.Interfaces
         private void InitializeDataGridView()
         {
             // Cree un DataGridView no vinculado declarando un recuento de columnas.
-            dgvUsuarios.ColumnCount = 4;
-            dgvUsuarios.ColumnHeadersVisible = true;
+            dgvCursos.ColumnCount = 4;
+            dgvCursos.ColumnHeadersVisible = true;
 
             // Configuramos la AutoGenerateColumns en false para que no se autogeneren las columnas
-            dgvUsuarios.AutoGenerateColumns = false;
+            dgvCursos.AutoGenerateColumns = false;
 
             // Cambia el estilo de la cabecera de la grilla.
             DataGridViewCellStyle columnHeaderStyle = new DataGridViewCellStyle();
 
             columnHeaderStyle.BackColor = Color.Beige;
             columnHeaderStyle.Font = new Font("Verdana", 8, FontStyle.Bold);
-            dgvUsuarios.ColumnHeadersDefaultCellStyle = columnHeaderStyle;
+            dgvCursos.ColumnHeadersDefaultCellStyle = columnHeaderStyle;
 
             // Definimos el nombre de la columnas y el DataPropertyName que se asocia a DataSource
-            //dgvUsuarios.Columns[0].Name = "ID";
-            //dgvUsuarios.Columns[0].DataPropertyName = "idUsuario";
-            // Definimos el ancho de la columna.
-            //dgvUsuarios.Columns[0].Width = 50;
 
-            dgvUsuarios.Columns[0].Name = "Nombre";
-            dgvUsuarios.Columns[0].DataPropertyName = "nombre";
-            dgvUsuarios.Columns[0].Width = 100;
+            dgvCursos.Columns[0].Name = "Nombre";
+            dgvCursos.Columns[0].DataPropertyName = "nombre";
+            dgvCursos.Columns[0].Width = 100;
 
-            dgvUsuarios.Columns[1].Name = "Descripción";
-            dgvUsuarios.Columns[1].DataPropertyName = "descripcion";
-            dgvUsuarios.Columns[1].Width = 150;
+            dgvCursos.Columns[1].Name = "Descripción";
+            dgvCursos.Columns[1].DataPropertyName = "descripcion";
+            dgvCursos.Columns[1].Width = 150;
 
-            dgvUsuarios.Columns[2].Name = "Fecha vigencia";
-            dgvUsuarios.Columns[2].DataPropertyName = "fecha_vigencia";
-            dgvUsuarios.Columns[2].Width = 100;
+            dgvCursos.Columns[2].Name = "Fecha vigencia";
+            dgvCursos.Columns[2].DataPropertyName = "fechaVigencia";
+            dgvCursos.Columns[2].Width = 120;
 
-            dgvUsuarios.Columns[3].Name = "Categoría";
-            dgvUsuarios.Columns[3].DataPropertyName = "id_categoria";
-            dgvUsuarios.Columns[3].Width = 100;
+            dgvCursos.Columns[3].Name = "Categoría";
+            dgvCursos.Columns[3].DataPropertyName = "categoria";
+            dgvCursos.Columns[3].Width = 100;
 
             // Cambia el tamaño de la altura de los encabezados de columna.
-            dgvUsuarios.AutoResizeColumnHeadersHeight();
+            dgvCursos.AutoResizeColumnHeadersHeight();
 
             // Cambia el tamaño de todas las alturas de fila para ajustar el contenido de todas las celdas que no sean de encabezado.
-            dgvUsuarios.AutoResizeRows(
+            dgvCursos.AutoResizeRows(
                 DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders);
 
-            dgvUsuarios.DataSource = oCursoService.ObtenerTodos();
+            dgvCursos.DataSource = oCursoService.ObtenerTodos();
         }
         private bool ValidarCampos()
         {
@@ -209,6 +205,16 @@ namespace TP_PAVI_Modulo2.Interfaces
         private void FrmUsuarios_Load(object sender, EventArgs e)
         {
             InitializeDataGridView();
+        }
+
+        private void lblBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

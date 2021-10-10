@@ -8,10 +8,14 @@ namespace TP_PAVI_Modulo2.LogicaNegocio
 {
     public class CursoService
     {
-        CursoDao oCursoDao;
+        private CursoDao oCursoDao;
+        public CursoService()
+        {
+            oCursoDao = new CursoDao();
+        }
         public IList<Curso> ObtenerTodos()
         {
-            return oCursoDao.GetAllUser();
+            return oCursoDao.GetAllCurso();
         }
         //internal object ObtenerUsuario(string usuario)
         //{

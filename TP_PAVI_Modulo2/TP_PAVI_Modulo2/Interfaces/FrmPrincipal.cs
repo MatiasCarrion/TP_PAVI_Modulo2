@@ -14,9 +14,10 @@ namespace TP_PAVI_Modulo2.Interfaces
 {
     public partial class FrmPrincipal : Form
     {
-        public FrmPrincipal()
+        public FrmPrincipal(string usuarioLogueado = null)
         {
             InitializeComponent();
+            lblUsuarioLogueado.Text = "Bienvenido: \n \n" + usuarioLogueado;
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)

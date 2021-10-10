@@ -8,17 +8,18 @@ namespace TP_PAVI_Modulo2.AccesoDatos
 {
     public class CursoDao
     {
-        public IList<Curso> GetAllUser()
+        public IList<Curso> GetAllCurso()
         {
             List<Curso> listaCursos = new List<Curso>();
-            String strSql = string.Concat(" SELECT id_curso, ",
-                                          "        nombre, ",
-                                          "        descripcion, ",
+            String strSql = string.Concat(" SELECT c.id_curso, ",
+                                          "        c.nombre, ",
+                                          "        c.descripcion, ",
+                                          "        c.fecha_vigencia, ",
                                           "        t.id_categoria, ",
-                                          "        t.nombre categ ",
-                                          "   FROM Usuarios u",
-                                          "  INNER JOIN Categorias t ON u.id_categoria= p.id_categoria " +
-                                          "  WHERE u.borrado = 0 ");
+                                          "        t.nombre categoria ",
+                                          "   FROM Cursos c",
+                                          "  INNER JOIN Categorias t ON c.id_categoria = t.id_categoria " +
+                                          "  WHERE c.borrado = 0 ");
             var resultadoConsulta = DataManager.GetInstance().ConsultaSQL(strSql);
 
             foreach (DataRow row in resultadoConsulta.Rows)
@@ -26,7 +27,7 @@ namespace TP_PAVI_Modulo2.AccesoDatos
                 listaCursos.Add(ObjectMappingUser(row));
             }
 
-            return (IList<Curso>)listaCursos;
+            return listaCursos;
         }
         private Curso ObjectMappingUser(DataRow row)
         {
@@ -35,11 +36,12 @@ namespace TP_PAVI_Modulo2.AccesoDatos
                 idCurso = Convert.ToInt32(row["id_curso"].ToString()),
                 nombre = row["nombre"].ToString(),
                 descripcion = row["descripcion"].ToString(),
-                fechaVigencia = Convert.ToDateTime(row["id_categoria"].ToString()),
+                fechaVigencia = Convert.ToDateTime(row["fecha_vigencia"].ToString()),
+                //borrado = Convert.ToBoolean(row["borrado"].ToString()),
                 categoria = new Categoria()
                 {
                     idCategoria = Convert.ToInt32(row["id_categoria"].ToString()),
-                    nombre = row["categoria"].ToString(),
+                    nombreCateg  = row["categoria"].ToString(),
                 }
             };
 

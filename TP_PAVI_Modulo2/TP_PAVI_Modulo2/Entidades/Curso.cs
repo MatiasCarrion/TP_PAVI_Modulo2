@@ -12,5 +12,9 @@ namespace TP_PAVI_Modulo2.Entidades
         public DateTime fechaVigencia { get; set; }
         public Categoria categoria { get; set; }
         public bool borrado { get; set; }
+        public override string ToString()
+        {
+            return nombre;
+        }
     }
 }

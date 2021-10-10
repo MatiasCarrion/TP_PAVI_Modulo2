@@ -32,10 +32,15 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.lblTitleCurso = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlListado = new System.Windows.Forms.Panel();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblBuscar = new System.Windows.Forms.Label();
+            this.lblFiltro1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.dgvCursos = new System.Windows.Forms.DataGridView();
             this.lblTitleListUser = new System.Windows.Forms.Label();
             this.pnlAltaMod = new System.Windows.Forms.Panel();
             this.cboCateg = new System.Windows.Forms.ComboBox();
@@ -51,7 +56,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pnlListado.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCursos)).BeginInit();
             this.pnlAltaMod.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,31 +73,85 @@ namespace TP_PAVI_Modulo2.Interfaces
             // panel1
             // 
             this.panel1.Controls.Add(this.lblTitleCurso);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(750, 51);
+            this.panel1.Size = new System.Drawing.Size(873, 45);
             this.panel1.TabIndex = 1;
             // 
             // pnlListado
             // 
+            this.pnlListado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlListado.Controls.Add(this.btnBuscar);
+            this.pnlListado.Controls.Add(this.textBox1);
+            this.pnlListado.Controls.Add(this.lblBuscar);
+            this.pnlListado.Controls.Add(this.lblFiltro1);
+            this.pnlListado.Controls.Add(this.comboBox1);
             this.pnlListado.Controls.Add(this.btnEliminar);
             this.pnlListado.Controls.Add(this.btnModificar);
             this.pnlListado.Controls.Add(this.btnAgregar);
-            this.pnlListado.Controls.Add(this.dgvUsuarios);
+            this.pnlListado.Controls.Add(this.dgvCursos);
             this.pnlListado.Controls.Add(this.lblTitleListUser);
-            this.pnlListado.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlListado.Location = new System.Drawing.Point(0, 51);
+            this.pnlListado.Location = new System.Drawing.Point(4, 51);
             this.pnlListado.Name = "pnlListado";
-            this.pnlListado.Size = new System.Drawing.Size(391, 399);
+            this.pnlListado.Size = new System.Drawing.Size(567, 399);
             this.pnlListado.TabIndex = 2;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBuscar.Location = new System.Drawing.Point(385, 24);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(163, 37);
+            this.btnBuscar.TabIndex = 10;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(93, 38);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(250, 23);
+            this.textBox1.TabIndex = 9;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // lblBuscar
+            // 
+            this.lblBuscar.AutoSize = true;
+            this.lblBuscar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblBuscar.Location = new System.Drawing.Point(22, 38);
+            this.lblBuscar.Name = "lblBuscar";
+            this.lblBuscar.Size = new System.Drawing.Size(46, 17);
+            this.lblBuscar.TabIndex = 8;
+            this.lblBuscar.Text = "Buscar";
+            this.lblBuscar.Click += new System.EventHandler(this.lblBuscar_Click);
+            // 
+            // lblFiltro1
+            // 
+            this.lblFiltro1.AutoSize = true;
+            this.lblFiltro1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFiltro1.Location = new System.Drawing.Point(22, 10);
+            this.lblFiltro1.Name = "lblFiltro1";
+            this.lblFiltro1.Size = new System.Drawing.Size(65, 17);
+            this.lblFiltro1.TabIndex = 7;
+            this.lblFiltro1.Text = "Categoría";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(93, 9);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(250, 23);
+            this.comboBox1.TabIndex = 6;
             // 
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Location = new System.Drawing.Point(270, 333);
+            this.btnEliminar.Location = new System.Drawing.Point(438, 400);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(110, 35);
             this.btnEliminar.TabIndex = 5;
@@ -105,7 +164,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.btnModificar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnModificar.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificar.Location = new System.Drawing.Point(143, 332);
+            this.btnModificar.Location = new System.Drawing.Point(310, 401);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(112, 36);
             this.btnModificar.TabIndex = 4;
@@ -118,7 +177,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.btnAgregar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnAgregar.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Location = new System.Drawing.Point(13, 333);
+            this.btnAgregar.Location = new System.Drawing.Point(11, 400);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(112, 35);
             this.btnAgregar.TabIndex = 3;
@@ -126,21 +185,21 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // dgvUsuarios
+            // dgvCursos
             // 
-            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuarios.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.dgvUsuarios.Location = new System.Drawing.Point(12, 47);
-            this.dgvUsuarios.Name = "dgvUsuarios";
-            this.dgvUsuarios.RowTemplate.Height = 25;
-            this.dgvUsuarios.Size = new System.Drawing.Size(368, 279);
-            this.dgvUsuarios.TabIndex = 2;
+            this.dgvCursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCursos.GridColor = System.Drawing.SystemColors.ControlLight;
+            this.dgvCursos.Location = new System.Drawing.Point(11, 99);
+            this.dgvCursos.Name = "dgvCursos";
+            this.dgvCursos.RowTemplate.Height = 25;
+            this.dgvCursos.Size = new System.Drawing.Size(537, 291);
+            this.dgvCursos.TabIndex = 2;
             // 
             // lblTitleListUser
             // 
             this.lblTitleListUser.AutoSize = true;
             this.lblTitleListUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTitleListUser.Location = new System.Drawing.Point(111, 3);
+            this.lblTitleListUser.Location = new System.Drawing.Point(11, 75);
             this.lblTitleListUser.Name = "lblTitleListUser";
             this.lblTitleListUser.Size = new System.Drawing.Size(130, 21);
             this.lblTitleListUser.TabIndex = 1;
@@ -160,10 +219,9 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.pnlAltaMod.Controls.Add(this.lblFechaVig);
             this.pnlAltaMod.Controls.Add(this.lblCursoDesc);
             this.pnlAltaMod.Controls.Add(this.label2);
-            this.pnlAltaMod.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlAltaMod.Location = new System.Drawing.Point(397, 51);
+            this.pnlAltaMod.Location = new System.Drawing.Point(573, 51);
             this.pnlAltaMod.Name = "pnlAltaMod";
-            this.pnlAltaMod.Size = new System.Drawing.Size(353, 399);
+            this.pnlAltaMod.Size = new System.Drawing.Size(300, 399);
             this.pnlAltaMod.TabIndex = 3;
             // 
             // cboCateg
@@ -171,21 +229,21 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.cboCateg.FormattingEnabled = true;
             this.cboCateg.Location = new System.Drawing.Point(110, 236);
             this.cboCateg.Name = "cboCateg";
-            this.cboCateg.Size = new System.Drawing.Size(217, 23);
+            this.cboCateg.Size = new System.Drawing.Size(166, 23);
             this.cboCateg.TabIndex = 18;
             // 
             // dtpFechaVig
             // 
             this.dtpFechaVig.Location = new System.Drawing.Point(110, 191);
             this.dtpFechaVig.Name = "dtpFechaVig";
-            this.dtpFechaVig.Size = new System.Drawing.Size(217, 23);
+            this.dtpFechaVig.Size = new System.Drawing.Size(166, 23);
             this.dtpFechaVig.TabIndex = 17;
             // 
             // txtNombreCurso
             // 
             this.txtNombreCurso.Location = new System.Drawing.Point(110, 91);
             this.txtNombreCurso.Name = "txtNombreCurso";
-            this.txtNombreCurso.Size = new System.Drawing.Size(217, 23);
+            this.txtNombreCurso.Size = new System.Drawing.Size(166, 23);
             this.txtNombreCurso.TabIndex = 16;
             // 
             // lblCursoName
@@ -205,7 +263,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Location = new System.Drawing.Point(221, 336);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(106, 34);
+            this.btnCancelar.Size = new System.Drawing.Size(69, 34);
             this.btnCancelar.TabIndex = 14;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -218,7 +276,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.Location = new System.Drawing.Point(110, 336);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(105, 34);
+            this.btnAceptar.Size = new System.Drawing.Size(68, 34);
             this.btnAceptar.TabIndex = 6;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
@@ -228,7 +286,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             // 
             this.txtPuntuacion.Location = new System.Drawing.Point(110, 142);
             this.txtPuntuacion.Name = "txtPuntuacion";
-            this.txtPuntuacion.Size = new System.Drawing.Size(217, 23);
+            this.txtPuntuacion.Size = new System.Drawing.Size(166, 23);
             this.txtPuntuacion.TabIndex = 10;
             // 
             // lblCursoCateg
@@ -276,18 +334,19 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(750, 450);
+            this.ClientSize = new System.Drawing.Size(874, 450);
             this.Controls.Add(this.pnlAltaMod);
             this.Controls.Add(this.pnlListado);
             this.Controls.Add(this.panel1);
             this.Name = "FrmCursos";
-            this.Text = "Usuarios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
+            this.Text = "Cursos";
             this.Load += new System.EventHandler(this.FrmUsuarios_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pnlListado.ResumeLayout(false);
             this.pnlListado.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCursos)).EndInit();
             this.pnlAltaMod.ResumeLayout(false);
             this.pnlAltaMod.PerformLayout();
             this.ResumeLayout(false);
@@ -313,8 +372,13 @@ namespace TP_PAVI_Modulo2.Interfaces
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNombreCurso;
         private System.Windows.Forms.Label lblCursoName;
-        private System.Windows.Forms.DataGridView dgvUsuarios;
+        private System.Windows.Forms.DataGridView dgvCursos;
         private System.Windows.Forms.ComboBox cboCateg;
         private System.Windows.Forms.DateTimePicker dtpFechaVig;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblBuscar;
+        private System.Windows.Forms.Label lblFiltro1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

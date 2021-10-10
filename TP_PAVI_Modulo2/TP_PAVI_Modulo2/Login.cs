@@ -44,7 +44,7 @@ namespace TP_PAVI_Modulo2
             {
                 // Login OK
                 UsuarioLogueado = usr.nombreUsuario;
-                FrmPrincipal main = new FrmPrincipal();
+                FrmPrincipal main = new FrmPrincipal(UsuarioLogueado);
                 main.ShowDialog();
                 this.Close();
             }
