@@ -24,12 +24,12 @@ namespace TP_PAVI_Modulo2.AccesoDatos
 
             foreach (DataRow row in resultadoConsulta.Rows)
             {
-                listaCursos.Add(ObjectMappingUser(row));
+                listaCursos.Add(ObjectMappingCurso(row));
             }
 
             return listaCursos;
         }
-        private Curso ObjectMappingUser(DataRow row)
+        private Curso ObjectMappingCurso(DataRow row)
         {
             Curso oCurso = new Curso
             {
@@ -46,6 +46,35 @@ namespace TP_PAVI_Modulo2.AccesoDatos
             };
 
             return oCurso;
+        }
+        public IList<Curso> GetCursoByFilters(Dictionary<string, object> parametros)
+        {
+            List<Curso> listadoCursos = new List<Curso>();
+
+            var strSql = String.Concat("SELECT c.id_curso, ",
+                                          "        c.nombre, ",
+                                          "        c.descripcion, ",
+                                          "        c.fecha_vigencia, ",
+                                          "        t.id_categoria, ",
+                                          "        t.nombre categoria ",
+                                          "   FROM Cursos c",
+                                          "  INNER JOIN Categorias t ON c.id_categoria = t.id_categoria ");
+                                          //"  WHERE c.borrado = 0 ");
+
+            if (parametros.ContainsKey("id_categoria"))
+                strSql += "AND (t.id_categoria=@id_categoria) ";
+                strSql += "WHERE c.nombre LIKE @Search OR c.descripcion LIKE @Search ";
+            
+            //strSql += " ORDER BY bug.fecha_alta DESC";
+
+            var resultadoConsulta = (DataRowCollection)DataManager.GetInstance().ConsultaSQL(strSql, parametros).Rows;
+
+            foreach (DataRow row in resultadoConsulta)
+            {
+                listadoCursos.Add(ObjectMappingCurso(row));
+            }
+            return listadoCursos;
+
         }
     }
 }

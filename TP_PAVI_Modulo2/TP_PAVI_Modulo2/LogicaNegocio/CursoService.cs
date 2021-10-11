@@ -17,9 +17,9 @@ namespace TP_PAVI_Modulo2.LogicaNegocio
         {
             return oCursoDao.GetAllCurso();
         }
-        //internal object ObtenerUsuario(string usuario)
-        //{
-        //    return oCursoDao.GetUser(usuario);
-        //}
+        public IList<Curso> ConsultarCursosConFiltros(Dictionary<string, object> parametros)
+        {
+            return oCursoDao.GetCursoByFilters(parametros);
+        }
     }
 }

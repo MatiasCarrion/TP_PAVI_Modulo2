@@ -44,6 +44,7 @@ namespace TP_PAVI_Modulo2
             {
                 // Login OK
                 UsuarioLogueado = usr.nombreUsuario;
+                MessageBox.Show("Acceso correcto", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 FrmPrincipal main = new FrmPrincipal(UsuarioLogueado);
                 main.ShowDialog();
                 this.Close();

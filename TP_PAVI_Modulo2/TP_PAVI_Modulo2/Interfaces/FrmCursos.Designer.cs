@@ -54,6 +54,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.lblFechaVig = new System.Windows.Forms.Label();
             this.lblCursoDesc = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.chkBoxTodos = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.pnlListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursos)).BeginInit();
@@ -81,6 +82,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             // pnlListado
             // 
             this.pnlListado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlListado.Controls.Add(this.chkBoxTodos);
             this.pnlListado.Controls.Add(this.btnBuscar);
             this.pnlListado.Controls.Add(this.txtBuscarCurso);
             this.pnlListado.Controls.Add(this.lblBuscar);
@@ -102,16 +104,17 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBuscar.Location = new System.Drawing.Point(385, 24);
+            this.btnBuscar.Location = new System.Drawing.Point(385, 49);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(163, 37);
+            this.btnBuscar.Size = new System.Drawing.Size(163, 34);
             this.btnBuscar.TabIndex = 10;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtBuscarCurso
             // 
-            this.txtBuscarCurso.Location = new System.Drawing.Point(93, 38);
+            this.txtBuscarCurso.Location = new System.Drawing.Point(93, 49);
             this.txtBuscarCurso.Name = "txtBuscarCurso";
             this.txtBuscarCurso.Size = new System.Drawing.Size(250, 23);
             this.txtBuscarCurso.TabIndex = 9;
@@ -120,7 +123,7 @@ namespace TP_PAVI_Modulo2.Interfaces
             // 
             this.lblBuscar.AutoSize = true;
             this.lblBuscar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblBuscar.Location = new System.Drawing.Point(22, 38);
+            this.lblBuscar.Location = new System.Drawing.Point(22, 49);
             this.lblBuscar.Name = "lblBuscar";
             this.lblBuscar.Size = new System.Drawing.Size(46, 17);
             this.lblBuscar.TabIndex = 8;
@@ -327,6 +330,17 @@ namespace TP_PAVI_Modulo2.Interfaces
             this.label2.TabIndex = 2;
             this.label2.Text = "Alta - Modificacion ";
             // 
+            // chkBoxTodos
+            // 
+            this.chkBoxTodos.AutoSize = true;
+            this.chkBoxTodos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.chkBoxTodos.Location = new System.Drawing.Point(385, 11);
+            this.chkBoxTodos.Name = "chkBoxTodos";
+            this.chkBoxTodos.Size = new System.Drawing.Size(62, 21);
+            this.chkBoxTodos.TabIndex = 11;
+            this.chkBoxTodos.Text = "Todas";
+            this.chkBoxTodos.UseVisualStyleBackColor = true;
+            // 
             // FrmCursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -377,5 +391,6 @@ namespace TP_PAVI_Modulo2.Interfaces
         private System.Windows.Forms.Label lblBuscar;
         private System.Windows.Forms.Label lblFiltro1;
         private System.Windows.Forms.ComboBox cboBuscarCateg;
+        private System.Windows.Forms.CheckBox chkBoxTodos;
     }
 }

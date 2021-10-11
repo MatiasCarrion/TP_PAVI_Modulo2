@@ -216,6 +216,35 @@ namespace TP_PAVI_Modulo2.Interfaces
             LlenarCombo(cboBuscarCateg, categoriaService.ObtenerTodos(), "nombreCateg", "idCategoria");
         }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (!chkBoxTodos.Checked)
+            {
+                Dictionary<string, object> parametros = new Dictionary<string, object>();
+                if (!string.IsNullOrEmpty(cboBuscarCateg.Text))
+                {
+                    var categoriaCurso = cboBuscarCateg.SelectedValue.ToString();
+                    var strSearch = txtBuscarCurso.Text;
+                    parametros.Add("id_categoria", categoriaCurso);
+                    parametros.Add("@Search", $"%{strSearch}%");
+                }
+                IList<Curso> listadoCursos = cursoService.ConsultarCursosConFiltros(parametros);
+
+                dgvCursos.DataSource = listadoCursos;
+
+                if (dgvCursos.Rows.Count == 0)
+                {
+                    MessageBox.Show("No se encontraron resultados para la categoria ingresada", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                IList<Curso> listadoCursos = cursoService.ObtenerTodos();
+                dgvCursos.DataSource = listadoCursos;
+            }
+            
+        }
+
         //private bool ExisteUsuario()
         //{
         //    return oCursoService.ObtenerUsuario(txtNombreCurso.Text) != null;

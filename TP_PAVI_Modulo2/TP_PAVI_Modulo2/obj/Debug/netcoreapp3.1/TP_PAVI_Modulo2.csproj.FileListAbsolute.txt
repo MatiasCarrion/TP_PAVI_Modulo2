@@ -89,3 +89,4 @@ D:\PAV\Pruebas\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_M
 D:\PAV\Pruebas\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.genruntimeconfig.cache
 D:\PAV\Pruebas\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.Interfaces.FrmUsuarios.resources
 D:\PAV\Pruebas\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.Interfaces.FrmCursos.resources
+D:\PAV\Pruebas\TP_PAVI_Modulo2\TP_PAVI_Modulo2\obj\Debug\netcoreapp3.1\TP_PAVI_Modulo2.csproj.AssemblyReference.cache
